@@ -1,0 +1,644 @@
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/* 清除浮动 */
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+body{
+    padding-top: 30px;
+}
+/* 顶部导航 */
+.top{
+    width: 1080px;
+    height: 34px;
+    margin: 0 auto 25px;
+}
+.top .logo img{
+    height: 34px;
+}
+/* 搜索 */
+.top .search{
+    width: 272px;
+    height: 32px;
+    border: 1px solid #c3c3c3;
+    margin: 1px 47px;
+    position: relative;
+}
+.top .search input[type="text"]{
+    width: 240px;
+    height: 22px;
+    line-height: 20px;
+    font-size: 13px;
+    padding: 5px;
+}
+.top .search i.iconfont.icon-sousuo {
+    position: absolute;
+    font-size: 22px;
+    color: #ccc;
+    right: 9px;
+    top: 5px;
+}
+/* 导航 */
+.top .right-nav li{
+    float: left;
+    margin-right: 15px;
+}
+.top .right-nav li a{
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-image: url(../img/nav_logo.png);
+    background-size: 450px 19px;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+.top .right-nav li a.nav_book{
+    background-position: 0 0;
+}
+.top .right-nav li a.nav_movie{
+    background-position: -57px 0;
+}
+.top .right-nav li a.nav_music{
+    background-position: -116px 0;
+}
+.top .right-nav li a.nav_group{
+    background-position: -175px 0;
+}
+.top .right-nav li a.nav_fm{
+    background-position: -234px 0;
+}
+.top .right-nav li a.nav_city{
+    background-position: -292px 0;
+}
+.top .right-nav li a.nav_thing{
+    background-position: -350px 0;
+}
+.top .right-nav li a.nav_shop{
+    background-position: -410px 0;
+}
+
+/* 中间块 */
+.main{
+    height: 300px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(../img/banner-bg.jpg);
+    background-size: contain;
+    background-position: calc(50% - 305px) top;
+    background-repeat: no-repeat;
+    background-color: #edf4ed;
+    position: relative;
+}
+/* 豆瓣版本号 */
+.main .info{
+    width: 190px;
+    height: 148px;
+    position: absolute;
+    left: 50%;
+    top: 32%;
+}
+.main .info h1 {
+    font-size: 25px;
+    color: #111;
+    line-height: 24px;
+}
+.main .info button.download {
+    width: 115px;
+    height: 30px;
+    background-color: #00B51D;
+    color: #fff;
+    border-radius: 2px;
+}
+.main .info span {
+    display: inline-block;
+    margin-top: 40px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #48aa0d;
+}
+.main .info span img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+/* 注册和登录 */
+.main .login{
+    padding: 30px 10px 10px;
+    overflow: hidden;
+    background: transparent;
+    position: absolute;
+    right: 270px; 
+    box-sizing: border-box;
+}
+/* 右上角二维码 */
+.main .login .reg-code {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+}
+.main .login .reg-code img {
+    width: 30px;
+    height: 30px;
+}
+/* 提示错误 */
+.main .login .show-error{
+    width: 268px;
+    color: #fe2617;
+    font-size: 12px;
+    line-height: 20px;
+    padding-left: 5px;
+    background-color: #fff6f1;
+    border: 1px solid #ffb8b3;
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: none;
+}
+.main .login .show-error i{
+    font-size: 13px;
+}
+/* 短信登录/注册 一栏 */
+.main .login .form-reg {
+    width: 280px;
+    color: #9b9b9b;
+    font-size: 0;
+    margin-bottom: 10px;
+}
+.main .login .form-reg ul{
+    border-bottom: 1px solid #ececec;
+}
+.main .login .form-reg ul li{
+    width: 50%;
+    text-align: center;
+    font-size: 13px;
+    display: inline-block;
+    line-height: 2;
+    cursor: pointer;
+}
+.main .login .form-reg ul li.on {
+    color: #000;
+    font-weight: 600;
+    border-bottom: 1px solid #494949;
+}
+/* 阅读协议 */
+.main .login .form-readme{
+    margin-bottom: 10px;
+    width: 280px;
+}
+.main .login .form-readme.on{
+    text-align: right;
+}
+.main .login .form-readme span {
+    font-size: 12px;
+    color: #9b9b9b;
+}
+.main .login .form-readme span a {
+    color: #41ac52;
+}
+/* 选择注册还是登录 */
+/* .main .login .form-readme span.protocol {
+    display: none;
+} */
+.main .login .form-readme span.find {
+    display: none;
+}
+/* 登录块 */
+.main .login .form-item{
+    margin-bottom: 10px;
+    position: relative;
+    width: 280px;
+}
+.main .login .form-item input[type="text"] {
+    height: 31px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.main .login .form-item input.phone-number {
+    padding-left: 60px;
+    width: 100%;
+    line-height: 33px;
+}
+/* +86 */
+.main .login .form-item .select-item {
+    width: 62px;
+}
+.main .login .form-item .select-item .title {
+    line-height: 33px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+.main .login .form-item .select-item {
+    width: 62px;
+}
+.main .login .form-item .select-item .title:after {
+    content: "|";
+    display: block;
+    position: absolute;
+    left: 38px;
+    top: -1px;
+    font-weight: 100;
+    color: #9b9b9b;
+}
+.main .login .form-item input.phone-code {
+    width: 100%;
+    padding-left: 10px;
+}
+.main .login .form-item input.phone-code:after {
+    content: "获取验证码";
+    display: block;
+    position: absolute;
+    left: 38px;
+    top: -1px;
+    font-weight: 100;
+    color: #9b9b9b;
+}
+.main .login a.getcode {
+    color: #41ac52;
+    font-size: 13px;
+}
+.main .login .form-item a.getcode {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+}
+/* 登录按钮 */
+.main .login .form-item button {
+    width: 100%;
+    height: 33px;
+    background-color: rgba(66,189,86,.5);
+    color: #fff;
+    font-size: 15px;
+    border-radius: 3px;
+}
+/* 自动登录 一栏 */
+.main .login .form-tips{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+.main .login .form-tips label {
+    font-size: 13px;
+}
+.main .login .form-tips a{
+    color: #41ac52;
+    font-size: 13px;
+}
+.main .login .form-tips a.getcode {
+    margin-left: 90px;
+    /* display: none; */
+}
+.main .login .form-tips a.overseas {
+    margin-left: 90px;
+    display: none;
+}
+/* 第三方登录 */
+.main .login .other-login span {
+    font-size: 12px;
+    color: #9b9b9b;
+}
+.main .login .other-login span a{
+    padding-right: 20px;
+}
+.main .login .other-login span a.icon-weixin{
+    font-size: 22px;
+    color: #8BC34A;
+}
+.main .login .other-login span a.icon-weibo{
+    font-size: 22px;
+    color: #ee4512;
+}
+/* 模块统一样式 */
+.section{
+    min-height: 200px;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+.section:nth-child(2n) {
+    padding: 40px 0 20px;
+    background: #f7f7f7;
+}
+.content {
+    width: 950px;
+    margin: 0 auto;
+}
+h2 {
+    font: 15px Arial, Helvetica, sans-serif;
+    color: #072;
+    margin: 0 0 12px 0;
+    line-height: 150%;
+}
+h2 a {
+    color: #37a;
+}
+h2 a:visited {
+    color: #669;
+}
+.content .leftnav{
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+}
+.content .leftnav .title a {
+    color: #494949;
+    font-size: 24px;
+}
+.content .leftnav .title a:visited {
+    color: #494949;
+}
+.content .leftnav .title a:hover {
+    color: #fff;
+    background: #37a;
+}
+.content .right {
+    float: right;
+    width: 265px;
+    margin-left: 30px;
+}
+/* 主要内容 */
+.main-content {
+    overflow: hidden;
+}
+/* 图片 */
+.hotPoint .content .main-content .inner .album {
+    width: 350px;
+    margin-right: 30px;
+    color: #999;
+    font-size: 0;
+}
+.hotPoint .content .main-content .inner .album ul {
+    margin: -10px 0 0 -10px;
+}
+.hotPoint .content .main-content .inner .album ul li {
+    float: left;
+    width: 170px;
+    vertical-align: top;
+    font-size: 12px;
+    margin: 10px 0 0 10px;
+    line-height: 1.5;
+}
+.hotPoint .content .main-content .inner .album ul li a {
+    color: #37a;
+}
+.hotPoint .content .main-content .inner .album ul li a:visited {
+    color: #669;
+}
+.hotPoint .content .main-content .inner .album ul li a:hover {
+    color: #fff;
+    background: #37a;
+}
+/* 中间目录 */
+.hotPoint .content .main-content .inner .title {
+    overflow: hidden;
+}
+.hotPoint .content .main-content .inner .title ul {
+    line-height: 1.62;
+}
+.hotPoint .content .main-content .inner .title ul li {
+    font-size: 12px;
+    margin-top: 12px;
+}
+.hotPoint .content .main-content .inner .title ul li .auth {
+    color: #999;
+}
+.hotPoint .content .main-content .inner .title a {
+    color: #37a;
+}
+.hotPoint .content .main-content .inner .title a:visited {
+    color: #669;
+}
+.hotPoint .content .main-content .inner .title a:hover {
+    color: #fff;
+    background: #37a;
+}
+/* 右边的热门话题 */
+.hotPoint .content .topic {
+    width: 265px;
+    margin: 10px 0;
+    margin-left: 30px;
+}
+.hotPoint .content .topic img {
+    width: 250px;
+    height: 125px;
+}
+.hotPoint .content .topic li {
+    margin-top: 10px;
+    color: #999;
+}
+.hotPoint .content .topic li a {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #3377aa;
+}
+.hotPoint .content .topic li a:visited {
+    color: #669;
+}
+.hotPoint .content .topic li span {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 15px;
+    line-height: 1;
+    color: #aaaaaa;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* 豆瓣时间 */
+.time .content .main-content {
+    overflow: hidden;
+}
+.time .content .main-content .inner .album ul li {
+    /* display: inline-block; *//*如果不用浮动可以用这个，不需要第二行第一个清除浮动*/
+    float: left;
+    width: 100px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 12px;
+    margin: 0 60px 30px 0;
+}
+.time .content .main-content .inner .album ul li a {
+    font-size: 13px;
+    display: inline-block;
+    color: #333333;
+    line-height: 1.38;
+    position: relative;
+}
+.time .content .main-content .inner .album ul li a .iconfont {
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.time .content .main-content .inner .album ul li a:visited {
+    color: #669;
+    position: relative;
+}
+.time .content .main-content .inner .album ul li a:hover {
+    color: #fff;
+    background: #37a;
+    position: relative;
+}
+.time .content .main-content .inner img {
+    width: 100px;
+    height: 141px;
+}
+.time .content .main-content .inner .album .column {
+    display: block;
+    color: #999999;
+    line-height: 1;
+    margin-top: 10px;
+}
+/* 豆瓣电影 */
+.section .content .leftnav .title {
+    margin-bottom: 12px;
+}
+.section .content ul li{
+    font-size: 14px;
+    line-height: 1.62;
+    margin-top: 5px;
+}
+.section .content li a{
+    color: #37a;
+}
+.section .content li a:visited{
+    color: #669;
+}
+.section .content li a:hover{
+    color: #fff;
+    background: #37a;
+}
+.movie .content .right .class{
+    margin-bottom: 30px;
+}
+.movie .content .right .class li {
+    float: left;
+    width: 4em;
+    margin-top: 4px;
+    text-align: left;
+    font-size: 12px;
+}
+.movie .content .right .recent li {
+    font-size: 12px;
+    line-height: 1.62;
+    margin-bottom: 6px;
+    padding-bottom: 5px;
+    list-style-type: decimal;
+    list-style-position: inside;
+    border-bottom: 1px solid #eaeaea;
+}
+.movie .content .main-content {
+    overflow: hidden;
+}
+.movie .content .main-content .inner li {
+    display: inline-block;
+    width: 24%;
+    margin-bottom: 20px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.movie .content .main-content li .pic {
+    margin-bottom: 10px;
+}
+.movie .content .main-content .inner img {
+    width: 100px;
+    height: 145px;
+}
+.movie .content .main-content .inner li a {
+    display: inline-block;
+    color: #333;
+    line-height: 1.45;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+.movie .content .main-content .inner span {
+    margin: 3px auto;
+    display: block;
+    width: 55px;
+    height: 11px;
+    margin-bottom: 4px;
+    background: url(../img/star-bg.png) no-repeat left top/100%;
+}
+.movie .content .main-content .inner span.star1 {
+    background-position: 0 -22px;
+}
+.movie .content .main-content .inner span.star2 {
+    background-position: 0 -44px;
+}
+.movie .content .main-content .inner span.star3 {
+    background-position: 0 -22px;
+}
+.movie .content .main-content .inner span.star4 {
+    background-position: 0 -55px;
+}
+.movie .content .main-content .inner li button {
+    display: block;
+    width: 66px;
+    height: 24px;
+    border-radius: 2px;
+    background: #1c8bd0;
+    color: #fff;
+    font-size: 12px;
+    margin: 10px auto;
+}
+/* 小组 */
+.group .content .right ul {
+    margin-bottom: 10px;
+}
+.group .content .right ul .tt a {
+    color: #333;
+    font-size: 14px;
+}
+.group .content .right ul li a{
+    float: left;
+    font-size: 12px;
+    margin-right: 10px;
+    color: #017a85;
+}
+.group .content .right ul li a:hover{
+    color: #fff;
+    background: #37a;;
+}
+.group .content .main-content img {
+    width: 48px;
+    height: 48px;
+}
+.group .content .main-content .some-group {
+    float: left;
+    width: 248px;
+    margin: 20px 0;
+}
+.group .content .main-content .some-group a {
+    color: #37a;
+    font-size: 13px;
+}
+.group .content .main-content .some-group a:visited {
+    color: #017a85;
+}
+.group .content .main-content .some-group a:hover {
+    color: #fff;
+    background: #37a;
+}
+.group .content .main-content .some-group .info {
+    margin: 0 15px;
+}
+.group .content .main-content .some-group .info span {
+    display: block;
+    font-size: 12px;
+    margin: 15px 0;
+    color: #999;
+}
