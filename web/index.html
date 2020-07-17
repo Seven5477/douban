@@ -54,8 +54,8 @@
                 请正确填写手机号</div>
             <div class="form-reg">
                 <ul>
-                    <li>短信登录/注册</li>
-                    <li class="on">密码登录</li>
+                    <li class="on">短信登录/注册</li>
+                    <li >密码登录</li>
                 </ul>
             </div>
             <div class="form-readme">
@@ -72,7 +72,9 @@
                     <div class="title">
                         +86
                     </div>
-                    <ul style="display: none;">
+                    <ul class = "phone" style="display: none;">
+                        <li class="sel">请选择地区</li>
+                        <i>x</i>
                         <li>中国大陆</li>
                         <li>中国香港</li>
                         <li>中国澳门</li>
@@ -87,6 +89,12 @@
                 <input type="text" class="phone-code" placeholder="验证码">
                 <a href=".com" class="getcode">获取验证码</a>
             </div>
+            <div class="form-item" style="display: none;">
+                <input type="text" class="phone-code" placeholder="手机号/邮箱">
+            </div>
+            <div class="form-item" style="display: none;">
+                <input type="text" class="phone-code" placeholder="密码">
+            </div>
             <div class="form-item">
                 <button>登录豆瓣</button>
             </div>
@@ -94,7 +102,7 @@
                 <input type="checkbox" name="remember" id="remember">
                 <label for="remember">下次自动登录</label>
                 <a href=".com" class="getcode">收不到验证码</a>
-                <a href=".com" class="overseas">海外手机登录</a>
+                <a href=".com" class="overseas" style="display: none;">海外手机登录</a>
             </div>
             <div class="other-login">
                 <span>第三方登录：
@@ -694,32 +702,110 @@
                 </div>
             </div>
         </div>
-
-    </div>
-
-    <!-- 读书 -->
-    <div class="books section">
-
-    </div>
-
-    <!-- 音乐 -->
-    <div class="music section">
-
     </div>
 
     <!-- 豆品 -->
     <div class="shop section">
-
+        <div class="content  clearfix">
+            <div class="leftnav">
+                <div class="title">
+                    <a href="shop.com">豆品</a>
+                </div>
+            </div>
+            <div class="right">
+                <h2>
+                    热门活动……
+                </h2>
+                <div class="img">
+                    <img src="img/shop1.png" alt="">
+                    <a href="shop1">我的收藏夹里有什么</a>
+                </div>
+                <h2>
+                    官方小组……(
+                    <a href="more.com">更多</a>)
+                </h2>
+            </div>
+            <div class="main-content">
+                <h2>
+                    热卖商品……(
+                    <a href="more.com">更多</a>)
+                </h2>
+                <div class="shopping">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="">
+                                    <img src="img/shop2.png" alt="">
+                                </a>
+                            <div class="tittle">
+                                <a href="2">电影勋章</a>
+                                <span>￥35</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/shop3.png" alt="">
+                            </a>
+                        <div class="tittle">
+                            <a href="2">晴雨伞</a>
+                            <span>￥129</span>
+                        </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/shop4.png" alt="">
+                            </a>
+                        <div class="tittle">
+                            <a href="2">猫咪短袖</a>
+                            <span>￥88</span>
+                        </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/shop5.png" alt="">
+                            </a>
+                        <div class="tittle">
+                            <a href="2">逆向手表</a>
+                            <span>￥328</span>
+                        </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!-- 同城 -->
-    <div class="city section">
 
     </div>
 
     <!-- 底部 -->
-    <div class="bottom">
-
+    <div class="bottom section">
+        <div class="content clearfix">
+            <div class="leftbottom">
+                <ul>
+                    <li>© 2005－2020 douban.com, all rights reserved 北京豆网科技有限公司</li>
+                    <li>京ICP证090015号 京ICP备11027288号 网络视听许可证0110418号</li>
+                    <li>京网文[2015]2026-368号  京公网安备11010502000728  新出网证(京)字129号</li>
+                    <li>违法和不良信息举报电话：4008353331-9 </li>
+                    <li>中国互联网举报中心 电话：12377 新出发京批字第直160029号</li>
+                </ul>
+            </div>
+            <div class="rightbottom">
+                <div class="topmenu clearfix">
+                    <ul>
+                        <li><a href="77">关于豆瓣</a></li>
+                        <li><a href="77">在豆瓣工作</a></li>
+                        <li><a href="77">联系我们</a></li>
+                        <li><a href="88">法律申明</a></li>
+                        <li><a href="00">帮助中心</a></li>
+                        <li><a href="89">移动应用</a></li>
+                        <li><a href="44">豆瓣广告</a></li>
+                    </ul>
+                </div>
+                <div class="pic">
+                    <a href=""><img src="img/adv3.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
     </div>
+    <script type="text/javascript" src="script/action.js"></script>
 </body>
 </html>

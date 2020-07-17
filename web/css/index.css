@@ -202,13 +202,15 @@ body{
 .main .login .form-readme span a {
     color: #41ac52;
 }
-/* 选择注册还是登录 */
+/* 选择注册还是登录:js实现 */
+/* 注册 */
 /* .main .login .form-readme span.protocol {
     display: none;
 } */
-.main .login .form-readme span.find {
+/* 登录 */
+/* .main .login .form-readme span.find {
     display: none;
-}
+} */
 /* 登录块 */
 .main .login .form-item{
     margin-bottom: 10px;
@@ -238,9 +240,42 @@ body{
     position: absolute;
     top: 0px;
     left: 10px;
+    cursor: pointer;
 }
 .main .login .form-item .select-item {
     width: 62px;
+}
+.main .login .form-item .select-item ul.phone {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid #bbb;
+    width: 100%;
+    max-height: 200px;
+    overflow: auto;
+    background: #fff;
+    z-index: 1;
+    border-radius: 4px;
+}
+.main .login .form-item .select-item ul li {
+    line-height: 2.6;
+    color: #494949;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+}
+.main .login .form-item .select-item ul .sel {
+    text-align: left;
+    padding-left: 30px;
+    color: #060;
+    font-weight: 600;
+    background: #ebf5eb;
+}
+.main .login .form-item .select-item ul i {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
 }
 .main .login .form-item .select-item .title:after {
     content: "|";
@@ -297,11 +332,9 @@ body{
 }
 .main .login .form-tips a.getcode {
     margin-left: 90px;
-    /* display: none; */
 }
 .main .login .form-tips a.overseas {
     margin-left: 90px;
-    display: none;
 }
 /* 第三方登录 */
 .main .login .other-login span {
@@ -641,4 +674,61 @@ h2 a:visited {
     font-size: 12px;
     margin: 15px 0;
     color: #999;
+}
+/* 豆品 */
+.shop .content a {
+    color: #37a;
+    font-size: 14px;
+}
+.shop .content a:visited {
+    color: #017a85;
+}
+.shop .content a:hover {
+    color: #fff;
+    background: #37a;
+}
+.shop .content .right .img {
+    margin-bottom: 30px;
+}
+.shop .content .right .img img {
+    margin-bottom: 10px;
+}
+.shop .content .main-content .shopping ul li {
+    float: left;
+    width: 240px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+.shop .content .main-content .shopping ul li img {
+    width: 240px;
+    height: 220px;
+}
+.shop .content .main-content .shopping ul li .tittle span {
+    float: right;
+    color: #E55457;
+}
+/* 底部 */
+.bottom .content {
+    border-top: 1px dashed #dcdcdc;
+}
+.bottom .content .leftbottom {
+    float: left;
+    width: 50%;
+}
+.bottom .content .leftbottom ul li {
+    color: #999;
+    font-size: 12px;
+}
+.bottom .content .rightbottom {
+    width: 50%;
+    float: right;
+}
+.bottom .content .rightbottom .topmenu ul li {
+    float: left;
+    margin-right: 15px;
+    font-size: 12px;
+}
+.bottom .content .rightbottom .pic {
+    width: 150px;
+    margin-top: 20px;
 }
